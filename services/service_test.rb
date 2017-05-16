@@ -1,5 +1,5 @@
 class ServiceTest < AbstractService
-	DIRECTORY = "/projects/test"
+	DIRECTORY = "/"
 	ENVIRONMENTS = ['dev', 'test']
 
 	def deploy
