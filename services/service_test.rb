@@ -1,9 +1,14 @@
 class ServiceTest < AbstractService
+  attr_accessor :hostname, :username, :password, :commands
   DIRECTORY = '/'
   ENVIRONMENTS = %w[dev test]
 
   def deploy
-    run_command("envoy run deploy-#{@env} --ver=#{@branch}")
+    parameters = { hostname: 'localhost',
+                   username: 'root',
+                   password: nil,
+                   commands: 'ls -l' }
+    run_command(parameters)
     {
       message: 'The deployment was completed! Check logs for more information.',
       status_code: 200
