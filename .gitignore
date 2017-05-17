@@ -1,3 +1,4 @@
 .gitignore
 .DS_Store
 logs/*
+configs/gitlab-token.conf
