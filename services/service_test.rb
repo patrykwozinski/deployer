@@ -1,5 +1,4 @@
 class ServiceTest < AbstractService
-  attr_accessor :hostname, :username, :password, :commands
   DIRECTORY = '/'
   ENVIRONMENTS = %w[dev test]
 
