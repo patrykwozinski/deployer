@@ -11,7 +11,7 @@ Request should be sended by `POST` method. You can use e.g. `CURL` by console co
 ```ssh
     curl --data "service=Test&env=dev&branch=dev" http://localhost:<PORT> -H "X-Gitlab-Token:EXAMPLE_TOKEN"
 ```
-Your query must have `service` key with name of service which you wants to use, `env` filled by chosen environment and `branch` to pull correct application branch. It is required to have header named `X-Gitlab-Token` - must be the same as `config/gitlab-token.conf`.
+Your query must have `service` key with name of service which you want to use, `env` filled by chosen environment and `branch` to pull correct application branch. It is required to have header named `X-Gitlab-Token` - must be the same as `config/gitlab-token.conf`.
 
 ---
 ### How to add a service.
